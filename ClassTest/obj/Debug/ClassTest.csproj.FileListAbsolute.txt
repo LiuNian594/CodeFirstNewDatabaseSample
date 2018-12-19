@@ -1,0 +1,10 @@
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\ClassTest.exe.config
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\ClassTest.exe
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\ClassTest.pdb
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\EntityFramework.dll
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\EntityFramework.SqlServer.dll
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\EntityFramework.xml
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\bin\Debug\EntityFramework.SqlServer.xml
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\obj\Debug\ClassTest.csprojResolveAssemblyReference.cache
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\obj\Debug\ClassTest.exe
+C:\Users\admin\Desktop\CodeFirstNewDatabaseSample\ClassTest\obj\Debug\ClassTest.pdb

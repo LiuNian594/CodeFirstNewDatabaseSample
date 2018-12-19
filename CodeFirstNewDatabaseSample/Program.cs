@@ -15,9 +15,10 @@ namespace CodeFirstNewDatabaseSample
             //创建一个新博客
             //createBlog();
             //显示所有博客
-            QueryBlog();
-            Update();
-            QueryBlog();
+            //QueryBlog();
+            //Update();
+            //QueryBlog();
+            Delete();
             Console.WriteLine("按任意键退出");
             Console.ReadKey();
         }
@@ -51,6 +52,14 @@ namespace CodeFirstNewDatabaseSample
             string name = Console.ReadLine();
             blog.Name = name;
             bbl.Update(blog);
+        }
+        static void Delete()
+        {
+            BlogBusinessLayer bbl = new BlogBusinessLayer();
+            Console.Write("请输入一个博客id:");
+            int id = int.Parse(Console.ReadLine());
+            Blog blog = bbl.Query(id);
+            bbl.Delete(blog);
         }
     }
 }

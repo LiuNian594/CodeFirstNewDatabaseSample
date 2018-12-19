@@ -41,5 +41,13 @@ namespace CodeFirstNewDatabaseSample.BusinessLayer
                 db.SaveChanges();
             }
         }
+        public void Delete(Blog blog)
+        {
+            using(var db=new BloggingContext())
+            {
+                db.Entry(blog).State = EntityState.Deleted;
+                db.SaveChanges();
+            }
+        }
     }
 }
