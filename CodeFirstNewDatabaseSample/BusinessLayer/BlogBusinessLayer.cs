@@ -49,5 +49,9 @@ namespace CodeFirstNewDatabaseSample.BusinessLayer
                 db.SaveChanges();
             }
         }
+        public void pAdd(Post post)
+        {
+
+        }
     }
 }
