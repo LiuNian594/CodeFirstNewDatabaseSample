@@ -9,49 +9,49 @@ using System.Data.Entity;
 
 namespace CodeFirstNewDatabaseSample.BusinessLayer
 {
-   public class BlogBusinessLayer
+   public class PostBusinessLayer
     {
-       public void Add(Blog blog)
+        public void Add(Post post)
         {
-            using(var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
-                db.Blogs.Add(blog);
+                db.Posts.Add(post);
                 db.SaveChanges();
             }
         }
-        public List<Blog> Query()
+        public List<Post> Query()
         {
-            using(var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
-                return db.Blogs.ToList();
+                return db.Posts.ToList();
             }
         }
-        public Blog Query(int id)
+        public Post Query(int id)
         {
-            using(var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
-                return db.Blogs.Find(id);
+                return db.Posts.Find(id);
             }
         }
-        public void Update(Blog blog)
+        public void Update(Post post)
         {
-            using(var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
-                db.Entry(blog).State = EntityState.Modified;
+                db.Entry(post).State = EntityState.Modified;
                 db.SaveChanges();
             }
         }
-        public void Delete(Blog blog)
+        public void Delete(Post post)
         {
-            using(var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
-                db.Entry(blog).State = EntityState.Deleted;
+                db.Entry(post).State = EntityState.Deleted;
                 db.SaveChanges();
             }
         }
         public void pAdd(Post post)
         {
-            using (var db=new BloggingContext())
+            using (var db = new BloggingContext())
             {
                 db.Posts.Add(post);
                 db.SaveChanges();
