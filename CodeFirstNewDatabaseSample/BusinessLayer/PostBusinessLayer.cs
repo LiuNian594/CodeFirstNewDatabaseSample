@@ -49,13 +49,6 @@ namespace CodeFirstNewDatabaseSample.BusinessLayer
                 db.SaveChanges();
             }
         }
-        public void pAdd(Post post)
-        {
-            using (var db = new BloggingContext())
-            {
-                db.Posts.Add(post);
-                db.SaveChanges();
-            }
-        }
+  
     }
 }

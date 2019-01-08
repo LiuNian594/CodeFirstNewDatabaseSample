@@ -13,6 +13,7 @@ namespace CodeFirstNewDatabaseSample
     {
         static void Main(string[] args)
         {
+            QueryPostForTitle();
             //创建一个新博客
             //createBlog();
             //显示所有博客
@@ -23,11 +24,29 @@ namespace CodeFirstNewDatabaseSample
             //AddPost();
             //Console.WriteLine("按任意键退出");
             //Console.ReadKey();
-            QueryBlog();
-            Console.WriteLine("0:退出 1：显示指定博客帖子列表 2:删除指定博客 3：更新指定博客 4:新增博客 ");
-            Menu();
+            //QueryBlog();
+            //QueryABlog();
+            //Console.WriteLine("0:退出 1：显示指定博客帖子列表 2:删除指定博客 3：更新指定博客 4:新增博客 ");
+            //Menu();
             Console.ReadKey();
             //PostMenu();
+        }
+        public Blog QueryABlog(string name)
+        {
+            using(var db=new BloggingContext())
+            {
+                var blogs = from b in db.Blogs
+                            where b.Name == name
+                            select b;
+                return blogs.FirstOrDefault();
+            }
+        }
+        static void QueryPostForTitle()
+        {
+            Console.WriteLine("sssss");
+            string name = Console.ReadLine();
+            PostBusinessLayer pbl = new BusinessLayer.PostBusinessLayer();
+            var query =pbl.
         }
         static void AddPost()
         {
